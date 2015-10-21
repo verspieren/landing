@@ -18,8 +18,9 @@ header {
   height: 96px;
 }
 
-.header-logo-part .header-logo-part-margin {
+.header-logo-part img {
   margin-top: 20px;
+  height: 53px;
 }
 
 .btn-nav {
@@ -32,7 +33,7 @@ header {
   z-index: 549;
   line-height: 40px;
   font-size: 15px;
-  background-color: #0066cc;
+  background-color: #0075B8;
   color: #ffffff;
   border-radius: 5px;
   text-align: center;
@@ -43,9 +44,9 @@ header {
 
 .btn-nav:hover {
   text-decoration: none;
-  border: 1px solid #0066cc;
+  border: 1px solid #0075B8;
   background-color: #ffffff;
-  color: #0066cc;
+  color: #0075B8;
 }
 
 .slider-part {
@@ -165,12 +166,14 @@ header {
   font-size: 22px;
   margin-top: 10px;
   margin-bottom: 10px;
+  height: 48px;
 }
 
 .tool p {
   color: #c0c0c0;
   text-align: justify;
   margin-bottom: 30px;
+  height: 80px;
 }
 
 .references {
@@ -185,11 +188,15 @@ header {
   margin-left: 10px;
 }
 
+.references a:hover {
+  text-decoration: none;
+}
+
 .download-button {
   font-size: 18px;
   padding: 15px;
   font-weight: 300;
-  background-color: #0066cc;
+  background-color: #0075B8;
   color: #ffffff;
   border-radius: 5px;
   text-align: center;
@@ -224,9 +231,9 @@ header {
 
 .download-button:hover, .download-button-white {
   text-decoration: none;
-  border: 1px solid #0066cc;
+  border: 1px solid #0075B8;
   background-color: #ffffff;
-  color: #0066cc;
+  color: #0075B8;
   font-weight: 400;
 }
 
