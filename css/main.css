@@ -31,7 +31,7 @@ header {
   height: 40px;
   z-index: 549;
   line-height: 40px;
-  font-size: 13px;
+  font-size: 15px;
   background-color: #0066cc;
   color: #ffffff;
   border-radius: 5px;
@@ -99,6 +99,7 @@ header {
 
 .content-part h4 img {
   margin-right: 10px;
+  margin-left: 10px;
   margin-top: -4px;
 }
 
@@ -144,6 +145,17 @@ header {
   color: #fff;
 }
 
+.outils {
+  padding-bottom: 70px;
+}
+
+.outils .subtitle {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 16px;
+  color: #c0c0c0;
+}
+
 .tool {
   margin-top: 25px;
 }
@@ -158,6 +170,7 @@ header {
 .tool p {
   color: #c0c0c0;
   text-align: justify;
+  margin-bottom: 30px;
 }
 
 .references {
@@ -192,7 +205,7 @@ header {
 }
 
 .proposition-sm {
-  margin-top: 30px;
+  margin-top: 50px;
 }
 
 .proposition {
@@ -206,15 +219,23 @@ header {
 .proposition h2 {
   margin-bottom: 50px;
   color: #fff;
-  font-weight: 300;
+  font-weight: 400;
 }
 
-.download-button:hover {
+.download-button:hover, .download-button-white {
   text-decoration: none;
   border: 1px solid #0066cc;
   background-color: #ffffff;
   color: #0066cc;
   font-weight: 400;
+}
+
+.download-button-white {
+  font-size: 24px;
+}
+
+.download-button-white img {
+  width: 40px;
 }
 
 footer {
