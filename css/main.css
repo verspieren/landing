@@ -1,0 +1,225 @@
+* {
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+  max-width: 960px;
+}
+
+header {
+  padding-bottom: 20px;
+}
+
+.header-logo-part {
+  height: 96px;
+}
+
+.header-logo-part .header-logo-part-margin {
+  margin-top: 20px;
+}
+
+.btn-nav {
+  float: left;
+  display: block;
+  width: 18%;
+  margin-left: 1%;
+  margin-right: 1%;
+  height: 40px;
+  z-index: 549;
+  line-height: 40px;
+  font-size: 13px;
+  background-color: #0066cc;
+  color: #ffffff;
+  border-radius: 5px;
+  text-align: center;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+.btn-nav:hover {
+  text-decoration: none;
+  border: 1px solid #0066cc;
+  background-color: #ffffff;
+  color: #0066cc;
+}
+
+.slider-part {
+  max-height: 525px;
+}
+
+.slider-part .item {
+  height: 525px;
+  overflow: hidden;
+}
+
+.slider-part .item img {
+  position: absolute;
+  bottom: 0;
+}
+
+.slider-part h1 {
+  font-size: 54px;
+  line-height: 70px;
+  text-align: center;
+  margin-bottom: 180px;
+}
+
+.content-part {
+  background-color: #161414;
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+
+.content-part h2 {
+  font-size: 36px;
+  color: #fff;
+  line-height: 50px;
+  text-align: center;
+}
+
+.content-part .divider {
+  width: 530px;
+  height: 10px;
+  border-bottom: 2px solid #0286ca;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.content-part h3 {
+  font-size: 26px;
+  color: #fff;
+  line-height: 50px;
+  text-align: center;
+}
+
+.content-part h4 img {
+  margin-right: 10px;
+  margin-top: -4px;
+}
+
+.content-part .col-sm-8 {
+  color: #c0c0c0;
+}
+
+.vocation-client {
+  height: 400px;
+  background-image: url(../images/bg1.png);
+  background-position: center bottom;
+  background-attachment: fixed;
+  text-align: center;
+}
+
+.vocation-client .img-container {
+  border-radius: 50%;
+  width: 130px;
+  height: 130px;
+  overflow: hidden;
+  margin: auto;
+  margin-top: 40px;
+  border: 3px solid #fff;
+}
+
+.vocation-client h4 {
+  color: #fff;
+  font-size: 20px;
+  line-height: 32px;
+  text-align: center;
+}
+
+.vocation-client .white-divider {
+  width: 320px;
+  height: 10px;
+  border-bottom: 2px solid #fff;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.vocation-client p {
+  color: #fff;
+}
+
+.tool {
+  margin-top: 25px;
+}
+
+.tool h4 {
+  color: rgb(2, 134, 202);
+  font-size: 22px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.tool p {
+  color: #c0c0c0;
+  text-align: justify;
+}
+
+.references {
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+
+.references img {
+  height: 100px;
+  margin-top: 20px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.download-button {
+  font-size: 18px;
+  padding: 15px;
+  font-weight: 300;
+  background-color: #0066cc;
+  color: #ffffff;
+  border-radius: 5px;
+  text-align: center;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+.download-button-sm {
+  font-size: 14px;
+  padding: 10px;
+  font-weight: 300;
+}
+
+.proposition-sm {
+  margin-top: 30px;
+}
+
+.proposition {
+  padding-top: 50px;
+  padding-bottom: 70px;
+  background-image: url(http://d3v7jvk3jtd1du.cloudfront.net/template-backgrounds/7.jpg);
+  background-position: center top;
+  background-attachment: fixed;
+}
+
+.proposition h2 {
+  margin-bottom: 50px;
+  color: #fff;
+  font-weight: 300;
+}
+
+.download-button:hover {
+  text-decoration: none;
+  border: 1px solid #0066cc;
+  background-color: #ffffff;
+  color: #0066cc;
+  font-weight: 400;
+}
+
+footer {
+  padding: 30px;
+  text-align: center;
+  background-color: #272727;
+  color: #fff;
+}
