@@ -1,0 +1,151 @@
+* {
+	@include box-sizing(border-box);
+}
+
+/* base font-size corresponds to 10px and is adapted to rem unit */
+html { 
+font-size: 62.5%;
+width: 100%;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+font-smooth:always;
+-webkit-text-size-adjust: 100%;
+}
+.disable-hover {
+	a{
+		pointer-events: none;
+	}
+}
+p{
+margin-top:0;
+/*font-size:99%;*/
+line-height: 1.6em;
+/* text-align: justify;
+ text-justify: inter-word;*/
+}
+body {
+//margin:0 auto;
+//position:relative;
+
+}
+/* font-sizing for content */
+/* preserve vertical-rythm, thanks to http://soqr.fr/vertical-rhythm/ */
+/*p,*/
+ul,
+ol,
+dl,
+blockquote,
+pre,
+td,
+th,
+label,
+textarea {
+	//line-height: 1.5em;
+	margin: 10px 0;
+}
+/* soft reset */
+html,
+body,
+label {
+	margin: 0;
+	padding: 0;
+}
+ul,
+ol {
+	list-style-position: outside;
+	padding-left:0;
+	/*li{
+		counter-increment: counter;
+	}
+	li::marker{
+		content: "(" counter(counter) ")";
+		display:inline-block;
+		width:2em;
+	}*/
+}
+
+sup{
+	padding: 0;
+	margin: 0;
+	line-height: 0;
+}
+
+code,
+pre,
+samp {
+	white-space: pre-wrap;
+	font-family: consolas, 'DejaVu Sans Mono', courier, monospace;
+}
+code { line-height: 1em; }
+table { margin-bottom: 21px; }
+.m-reset { margin: 0 !important; }
+.p-reset { padding: 0 !important; }
+
+/* avoid collapsing margins on headings */
+h1:first-child,
+h2:first-child,
+h3:first-child,
+h4:first-child,
+h5:first-child,
+h6:first-child {
+	margin-top: 0;
+}
+
+/* avoid margins on nested elements */
+li p,
+li ul,
+li ol {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+li{
+
+}
+/* HTML5 tags */
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section {
+	display: block;
+}
+
+/* max values */
+img, table, td, blockquote, code, pre, textarea, input, video {
+	max-width: 100%;
+	height: auto;
+}
+
+/* you shall not pass */
+textarea, table, td, th, code, pre, samp, div {
+	word-wrap: break-word;
+	-webkit-hyphens: auto;
+	-moz-hyphens: auto;
+	-ms-hyphens: auto;
+	-o-hyphens: auto;
+	hyphens: auto;
+}
+input[type=text],input[type=search], input.input-text, textarea, input.txt, input[type=tel], input[type=email]{
+	outline: none;
+	-webkit-appearance: none;
+}
+/* pictures */
+img {
+	width: auto;
+	vertical-align: middle;
+}
+a{
+	text-decoration:none;
+}
+a img { border: 0; }
+ 
+.clear,
+.line,
+.row {
+	clear: both;
+	
+}
+figure{
+	margin:0;
+}
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}

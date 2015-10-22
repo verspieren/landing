@@ -1,0 +1,218 @@
+@mixin filter($filter-type,$filter-amount) { 
+  -webkit-filter: $filter-type+unquote('(#{$filter-amount})');
+  -moz-filter: $filter-type+unquote('(#{$filter-amount})');
+  -ms-filter: $filter-type+unquote('(#{$filter-amount})');
+  -o-filter: $filter-type+unquote('(#{$filter-amount})');
+  filter: $filter-type+unquote('(#{$filter-amount})');
+}
+@mixin user-select($name){
+	-webkit-touch-callout: $name;
+	-webkit-user-select: $name;
+	-khtml-user-select: $name;
+	-moz-user-select: $name;
+	-ms-user-select: $name;
+	user-select: $name;
+}
+@mixin vendor-prefix($name, $argument) {
+  -webkit-#{$name}: $argument;
+  -ms-#{$name}: $argument;
+  -moz-#{$name}: $argument;
+  -o-#{$name}: $argument;
+  #{$name}: $argument;
+}
+@mixin vendor-prefix-plus($name, $argument) {
+
+  -webkit-#{$name}: -webkit-#{$argument};
+  -ms-#{$name}: -ms-#{$argument};
+  -moz-#{$name}: -moz-#{$argument};
+  -o-#{$name}: -o-#{$argument};
+  #{$name}: $argument;
+}
+// Box sizing
+@mixin box-sizing($boxmodel) {
+  -webkit-box-sizing: $boxmodel;
+	 -moz-box-sizing: $boxmodel;
+		  box-sizing: $boxmodel;
+}
+
+@mixin colonne($x, $y, $float:left) {
+	@if $x / $y == 1{
+		//width:($x / $y) * 100% - 2 * $marge;
+		width:($x / $y) * 100%;
+		float: #{$float};
+		padding-left:$marge;
+		padding-right:$marge;
+		//padding:0 $marge;
+	} @else {
+		float: #{$float};
+		width:($x / $y) * 100%;
+		padding-left:$marge;
+		padding-right:$marge;
+		//padding:0;
+	}
+
+}
+@mixin keyframes($name) {
+  @-webkit-keyframes #{$name} {
+    @content;
+  }
+  @-moz-keyframes #{$name} {
+    @content;
+  }  
+  @-ms-keyframes #{$name} {
+    @content;
+  }
+  @-o-keyframes #{$name} {
+    @content;
+  }  
+  @keyframes #{$name} {
+    @content;
+  }
+}
+
+@mixin animation($str) {
+  -webkit-animation: #{$str};
+  -moz-animation: #{$str};
+  -ms-animation: #{$str};
+  -o-animation: #{$str};
+  animation: #{$str};      
+}
+
+@mixin loader($radius, $backgroundColor, $darken:0%, $bg:" "){
+		//position: relative;
+		width: #{$radius}px;    /* diameter */
+		height: #{$radius}px;    /* diameter */
+		background-repeat:no-repeat;
+		&:after, .outer, .inner{
+			position: absolute;
+		    left: 0;
+		    top: 0;
+		    right: 0;
+		    bottom: 0;
+		}
+		&:after{
+			content:" ";
+		    margin: 10%;    /* stroke width */
+		    border-radius: #{$radius}px;
+		    background: #{$backgroundColor};    /* container background */
+		}
+		.outer {
+			@include animation(rotate-outer 3s linear infinite);
+
+		}
+		.inner {
+			@include animation(rotate-inner 3s linear infinite);
+
+		}
+		.outer:before, .inner:before, .outer:after, .inner:after {
+		    position: absolute;
+		    top: 0;
+		    bottom: 0;
+		    content:" ";
+		}
+		/* Left half */
+		 .outer:before, .inner:before {
+		    left: 0;
+		    right: 50%;
+		    border-radius: #{$radius}px 0 0 #{$radius}px;    /* diameter */
+		}
+		/* Right half */
+		 .outer:after, .inner:after {
+		    left: 50%;
+		    right: 0;
+		    border-radius: 0 #{$radius}px #{$radius}px 0;    /* diameter */
+		}
+		/* Half gradients */
+		 .outer:before {
+			@include background-image(linear-gradient( top, rgba($backgroundColor,1) 0%, rgba($backgroundColor,0.5) 100%));
+
+		}
+		.outer:after {
+			@include background-image(linear-gradient( top, rgba($backgroundColor,1) 0%, rgba($backgroundColor,0.5) 100%));
+		}
+		.inner:before {
+			@include background-image(linear-gradient( top, rgba($backgroundColor,1) 0%, rgba(darken($grisclair,$darken),0.5) 100%));
+
+		}
+		.inner:after {
+			@include background-image(linear-gradient( top, rgba(darken($gris,$darken),0.5) 0%, rgba(darken($grisclair,$darken),0.5) 100%));
+		}
+		.svg &{
+			background:url("/images/loader.svg");
+			&:after{
+				display:none;
+			}
+			@include animation(rotate-inner 3s linear infinite);
+			.outer,.inner{
+				background:none;
+				display:none;
+				@include animation(none);
+			}
+		}
+		.no-csstransitions &{
+			background: transparent url(#{$bg}) no-repeat center;
+			.inner{
+				display:none;
+			}
+			.outer{
+				display:none;
+			}
+			&:after{
+				background:none;
+			}
+
+		}
+}
+$fallback-extension: 'png' !default;
+$retina-suffix: '@2x';
+@mixin background-image-svg($name, $size:false){
+    .svg &{
+		background-image: url(/images/#{$name}.svg);
+		@if($size){
+	       @include background-size($size);
+	    }
+	}
+	.svg .gecko &{
+		//background-image: url(/images/#{$name}.#{$fallback-extension});
+	}
+    @if($size){
+       @include background-size($size);
+    }
+    //.no-svg &{
+    background-image: url(/images/#{$name}.#{$fallback-extension});
+
+    @media only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3/2), only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5),
+		only screen and (-webkit-min-device-pixel-ratio: 2),
+		only screen and (   min--moz-device-pixel-ratio: 2),
+		only screen and (     -o-min-device-pixel-ratio: 2/1),
+		only screen and (        min-device-pixel-ratio: 2),
+		only screen and (                min-resolution: 192dpi),
+		only screen and (                min-resolution: 2dppx) {
+          background-image: url(/images/#{$name}#{$retina-suffix}.#{$fallback-extension});
+    }
+   // }
+}
+
+@mixin background-image-retina($name, $size:false, $fallback-extension:'png'){
+    
+    //.no-svg &{
+    background-image: url(/images/#{$name}.#{$fallback-extension});
+	@if($size){
+       @include background-size($size);
+    }
+    @media only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3/2), only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5),
+		only screen and (-webkit-min-device-pixel-ratio: 2),
+		only screen and (   min--moz-device-pixel-ratio: 2),
+		only screen and (     -o-min-device-pixel-ratio: 2/1),
+		only screen and (        min-device-pixel-ratio: 2),
+		only screen and (                min-resolution: 192dpi),
+		only screen and (                min-resolution: 2dppx) {
+        background-image: url(/images/#{$name}#{$retina-suffix}.#{$fallback-extension});
+		@if($size){
+	       @include background-size($size);
+	    }
+    }
+
+	
+   // }
+}

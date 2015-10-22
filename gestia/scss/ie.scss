@@ -1,0 +1,43 @@
+@import "base";
+@import "01-small-screen";
+@import "01-small-screen2";
+@import "01-small-screen3";
+@import "01-small-screen4";
+@import "01-small-screen5";
+@import "01-small-screen6";
+@import "02-medium-screen";
+@import "02-medium-screen2";
+@import "02-medium-screen3";
+@import "03-large-screen";
+//@import "03-large-screen2";    
+.ie8{
+	.refresh{
+		&:before{
+			content:" " !important;
+		}
+	}
+	nav{
+		display:block;
+	}
+
+
+	
+	
+	.tab-content .date{
+		width:95px;
+	}
+	.btn-connexion{
+		width:182px;
+		height:37px;
+		overflow:hidden;
+		text-align:center;
+		background:url(images/btn-ie8.png) no-repeat top left;
+		&:after, &:before{
+			display:none;
+		}
+		&:hover{
+			background-position: 0 -37px;
+		}
+
+	}
+}
