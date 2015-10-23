@@ -37,8 +37,9 @@ header {
   z-index: 549;
   line-height: 40px;
   font-size: 15px;
-  background-color: #0075B8;
-  color: #ffffff;
+  border: 1px solid #0075B8;
+  background-color: #ffffff;
+  color: #0075B8;
   border-radius: 5px;
   text-align: center;
   box-sizing: border-box;
@@ -46,11 +47,14 @@ header {
   -webkit-box-sizing: border-box;
 }
 
+.transparent {
+  background: transparent!important;
+}
+
 .btn-nav:hover {
   text-decoration: none;
-  border: 1px solid #0075B8;
-  background-color: #ffffff;
-  color: #0075B8;
+  background-color: #0075B8;
+  color: #ffffff;
 }
 
 .slider-part {
@@ -89,7 +93,7 @@ header {
   text-align: center;
 }
 
-.content-part .divider {
+.divider {
   width: 530px;
   height: 10px;
   border-bottom: 2px solid #0286ca;
@@ -100,7 +104,6 @@ header {
 .content-part h3 {
   font-size: 26px;
   color: #fff;
-  line-height: 50px;
   text-align: center;
 }
 
@@ -110,8 +113,8 @@ header {
 }
 
 .content-part .offre-title h3 {
-  font-size: 40px;
-  margin-top: 110px;
+  font-size: 24px;
+  margin-top: 60px;
 }
 
 .content-part .offre-title-1 h3 {
@@ -129,8 +132,8 @@ header {
 }
 
 .vocation-client {
-  height: 400px;
-  background-image: url(../images/president.jpg);
+  height: 480px;
+  background-image: url(../images/bg1.jpg);
   background-position: center top;
   background-attachment: fixed;
   text-align: center;
@@ -228,8 +231,9 @@ header {
   font-size: 18px;
   padding: 15px;
   font-weight: 300;
-  background-color: #0075B8;
-  color: #ffffff;
+  border: 1px solid #0075B8;
+  background-color: #ffffff;
+  color: #0075B8;
   border-radius: 5px;
   text-align: center;
   box-sizing: border-box;
@@ -247,6 +251,10 @@ header {
   margin-top: 50px;
 }
 
+.propositions {
+  margin-top: 80px;
+}
+
 .proposition {
   padding-top: 50px;
   padding-bottom: 70px;
@@ -256,16 +264,12 @@ header {
 }
 
 .proposition h2 {
-  margin-bottom: 50px;
   color: #fff;
   font-weight: 400;
 }
 
 .download-button:hover, .download-button-white {
   text-decoration: none;
-  border: 1px solid #0075B8;
-  background-color: #ffffff;
-  color: #0075B8;
   font-weight: 400;
 }
 
