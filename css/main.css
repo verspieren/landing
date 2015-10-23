@@ -117,13 +117,18 @@ header {
   margin-top: -4px;
 }
 
-.content-part .offre-title h3 {
-  font-size: 24px;
-  margin-top: 60px;
+.content-part .offre-title {
+  text-align: center;
 }
 
-.content-part .offre-title-1 h3 {
-  margin-top: 60px;
+
+.content-part .offre-title h3 {
+  font-size: 24px;
+  margin-top: 90px;
+}
+
+.content-part .offre-title img {
+  margin-top: 20px;
 }
 
 .content-part .offre-content {
@@ -137,7 +142,7 @@ header {
 }
 
 .vocation-client {
-  height: 480px;
+  height: 500px;
   background-image: url(../images/bg1.jpg);
   background-position: center top;
   background-attachment: fixed;
@@ -159,23 +164,28 @@ header {
 }
 
 .vocation-client h4 {
-  color: #fff;
+  color: #333;
   font-size: 20px;
   line-height: 32px;
   text-align: center;
 }
 
+.vocation-client h2 {
+  color: #333;
+}
+
+
 .vocation-client .white-divider {
   width: 320px;
   height: 10px;
-  border-bottom: 2px solid #fff;
+  border-bottom: 2px solid #333;
   margin: auto;
   margin-top: 20px;
   margin-bottom: 20px;
 }
 
 .vocation-client p {
-  color: #fff;
+  color: #333;
 }
 
 .outils {
@@ -244,6 +254,18 @@ header {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
+  font-weight: 400;
+}
+
+.download-button-blue {
+  border: 1px solid #0075B8;
+  background-color: #0075B8;
+  color: #fff;
+}
+
+.download-button-blue:hover {
+  background-color: #fff;
+  color: #0075B8;
 }
 
 .download-button-sm {
@@ -294,7 +316,7 @@ footer {
 }
 
 footer img {
-  width: 300px;
+  width: 150px;
 }
 
 .footer-image-link {
