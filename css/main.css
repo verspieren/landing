@@ -10,6 +10,10 @@ body {
   max-width: 960px;
 }
 
+span.blue {
+  color: #0075B8;
+}
+
 header {
   padding-bottom: 20px;
 }
@@ -67,7 +71,9 @@ header {
   font-size: 54px;
   line-height: 70px;
   text-align: center;
-  margin-bottom: 180px;
+  margin-bottom: 100px;
+  padding: 20px;
+  background: rgba(0,0,0,.4);
 }
 
 .content-part {
@@ -100,18 +106,32 @@ header {
 
 .content-part h4 img {
   margin-right: 10px;
-  margin-left: 10px;
   margin-top: -4px;
 }
 
-.content-part .col-sm-8 {
+.content-part .offre-title h3 {
+  font-size: 40px;
+  margin-top: 110px;
+}
+
+.content-part .offre-title-1 h3 {
+  margin-top: 60px;
+}
+
+.content-part .offre-content {
   color: #c0c0c0;
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+
+.offre-content h4 {
+  color: #0286ca;
 }
 
 .vocation-client {
   height: 400px;
-  background-image: url(../images/bg1.png);
-  background-position: center bottom;
+  background-image: url(../images/president.jpg);
+  background-position: center top;
   background-attachment: fixed;
   text-align: center;
 }
@@ -124,6 +144,10 @@ header {
   margin: auto;
   margin-top: 40px;
   border: 3px solid #fff;
+}
+
+.vocation-client .img-container img {
+  width: 150px;
 }
 
 .vocation-client h4 {
@@ -164,7 +188,7 @@ header {
 .tool h4 {
   color: rgb(2, 134, 202);
   font-size: 22px;
-  margin-top: 10px;
+  margin-top: 30px;
   margin-bottom: 10px;
   height: 48px;
 }
@@ -173,7 +197,11 @@ header {
   color: #c0c0c0;
   text-align: justify;
   margin-bottom: 30px;
-  height: 80px;
+  height: 140px;
+}
+
+.tool img {
+  width: 150px;
 }
 
 .references {
@@ -184,8 +212,12 @@ header {
 .references img {
   height: 100px;
   margin-top: 20px;
-  margin-right: 10px;
-  margin-left: 10px;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+.references img.img-big {
+  height: 120px;
 }
 
 .references a:hover {
@@ -218,7 +250,7 @@ header {
 .proposition {
   padding-top: 50px;
   padding-bottom: 70px;
-  background-image: url(http://d3v7jvk3jtd1du.cloudfront.net/template-backgrounds/7.jpg);
+  background-image: url(../images/dl.jpg);
   background-position: center top;
   background-attachment: fixed;
 }
@@ -238,7 +270,7 @@ header {
 }
 
 .download-button-white {
-  font-size: 24px;
+  font-size: 14px;
 }
 
 .download-button-white img {
@@ -250,4 +282,8 @@ footer {
   text-align: center;
   background-color: #272727;
   color: #fff;
+}
+
+footer img {
+  width: 300px;
 }
