@@ -750,3 +750,66 @@ fieldset[disabled] .datepicker table tr td span.active.disabled:hover.active {
   margin-left: -5px;
   margin-right: -5px;
 }
+
+table {
+  width: 500px;
+  line-height: 10px;
+}
+
+.puce {
+  margin-left: 20px;
+  line-height: 30px;
+}
+
+.logo_verspieren {
+  margin-left: -20px;
+  margin-top: 15px;
+}
+
+.logo_havas_voyages {
+  margin-left: 90px;
+  margin-top: 15px;
+}
+
+p {
+  font-family: Arial;
+  font-size: 14px;
+}
+
+textarea {
+  width: 750px;
+  height: 130px;
+  margin-top: 0px;
+}
+
+.btn-connexion {
+  background: url(../images/btn@.png);
+}
+
+.btn-connexion:hover {
+  background: url(../images/btn@rouge.png);
+}
+
+.parent {
+  width : 190px;
+}
+
+.no_sous_menu {
+  width: 190px;
+}
+
+.text_menu {
+  padding-left: 20px;
+  font-size: 17px;
+}
+
+footer {
+  position:absolute;
+  bottom:0px;
+  width: 100%;
+}
+
+a:focus
+{
+   outline:none;
+}
