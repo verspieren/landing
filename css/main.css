@@ -16,6 +16,10 @@ span.blue {
 
 header {
   padding-bottom: 20px;
+  position: fixed;
+  z-index: 999999;
+  width: 100%;
+  background: #fff;
 }
 
 .header-logo-part {
@@ -58,6 +62,7 @@ header {
 }
 
 .slider-part {
+  padding-top: 156px;
   max-height: 525px;
 }
 
@@ -290,4 +295,12 @@ footer {
 
 footer img {
   width: 300px;
+}
+
+.footer-image-link {
+  display: block;
+  width: 340px;
+  margin: auto;
+  padding: 20px;
+  background: #fff;
 }
