@@ -10,14 +10,17 @@ body {
   max-width: 960px;
 }
 
+h2 {
+  font-size: 36px;
+  line-height: 50px;
+}
+
 span.blue {
   color: #0075B8;
 }
 
 header {
   padding-bottom: 20px;
-  position: fixed;
-  z-index: 999999;
   width: 100%;
   background: #fff;
 }
@@ -46,6 +49,7 @@ header {
   color: #0075B8;
   border-radius: 5px;
   text-align: center;
+  overflow: hidden;
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -62,7 +66,6 @@ header {
 }
 
 .slider-part {
-  padding-top: 156px;
   max-height: 681px;
 }
 
@@ -73,6 +76,8 @@ header {
 
 .slider-part .item img {
   position: absolute;
+  min-height: 100%;
+  width: 100%;
   bottom: 0;
 }
 
@@ -144,7 +149,7 @@ header {
 .vocation-client {
   height: 500px;
   background-image: url(../images/bg1.jpg);
-  background-position: center top;
+  background-position: center center;
   background-attachment: fixed;
   text-align: center;
 }
@@ -291,7 +296,7 @@ header {
 }
 
 .proposition h2 {
-  color: #fff;
+  color: #333;
   font-weight: 400;
 }
 
