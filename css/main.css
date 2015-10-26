@@ -147,7 +147,7 @@ header {
 }
 
 .vocation-client {
-  height: 500px;
+  padding-bottom: 40px;
   background-image: url(../images/bg1.jpg);
   background-position: center center;
   background-attachment: fixed;
@@ -330,4 +330,24 @@ footer img {
 
 footer a {
   color: #1284AB;
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+  .divider, .white-divider {
+    width: 100%!important;
+  }
+
+  .header-logo-part {
+    text-align: center!important;
+  }
+
+  .btn-nav {
+    width: 100%;
+    margin-top: 10px
+  }
+
+  .slider-part h1 {
+    font-size: 30px;
+    margin-bottom: 40px;
+  }
 }
