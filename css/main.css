@@ -6,6 +6,10 @@ body {
   font-family: 'Open Sans', sans-serif;
 }
 
+a:focus {
+  outline:none;
+}
+
 .container {
   max-width: 960px;
 }
@@ -349,5 +353,9 @@ footer a {
   .slider-part h1 {
     font-size: 30px;
     margin-bottom: 40px;
+  }
+
+  .vocation-client {
+    background-position: center top;
   }
 }
