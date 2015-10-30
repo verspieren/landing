@@ -751,7 +751,6 @@ fieldset[disabled] .datepicker table tr td span.active.disabled:hover.active {
   margin-right: -5px;
 }
 
-
 .logo_verspieren {
   margin-left: -20px;
   margin-top: 15px;
@@ -762,97 +761,33 @@ fieldset[disabled] .datepicker table tr td span.active.disabled:hover.active {
   margin-top: 15px;
 }
 
-.bloc_vert h5, .bloc_vert3 h5, .bloc_vert5 h5 {
-  font-family: Arial;
-  font-size: 16px;
-  text-transform: uppercase;
-  color: white;
+.cl100, .cl60, .cl30 {
+  position: relative;
+  float: left;
+  width: 100%;
+  margin-left: 20px;
 }
 
-.bloc_vert, .bloc_vert3, .bloc_vert5 {
-  background: #8EC63F; 
-  width: 260px;
-  height: 89px;
-  padding: 10px;
+.cl100 {
+  width: 100%;
 }
 
-.bloc_blanc {
-  width: 260px;
-  height: 6px;
+.cl60 {
+  width: 60%;
 }
 
-.bloc_vert2, .bloc_vert4, .bloc_vert6 {
-  background: #8EC63F;
-  width: 260px;
-  height: 10px;
-  margin-bottom: 27px;
+.cl30 {
+  width: 30%;
 }
 
-.content-cat-2 {
-  width: 275px;
+table {
+  width: 500px;
+  line-height: 10px;
 }
 
-.content-news {
-  width: 375px;
-  height: 370px;
-  background: red;
-  margin-left: 60px;
-  padding: 0px;
-}
-
-.bloc_gris {
-  background: #F2F2F2; 
-  width: 435px;
-  height: 105px;
-  padding: 10px;
-}
-
-.bloc_gris h5 {
-  font-family: Arial;
-  font-size: 16px;
-  text-transform: uppercase;
-  color: #0491BB;
-}
-
-.bloc_gris2 {
-  background: #808080; 
-  width: 435px;
-  height: 105px;
-  padding: 10px;
-  margin-top: 27px;
-}
-
-.bloc_gris3 {
-  background: #808080; 
-  width: 435px;
-  height: 105px;
-  padding: 10px;
-  margin-top: 27px;
-}
-
-.bloc_gris2 h5, .bloc_gris3 h5 {
-  font-family: Arial;
-  font-size: 16px;
-  text-transform: uppercase;
-  color: white;
-}
-
-.tab_check {
-  font-family: Arial;
-  font-size: 14px;
-  line-height: 15px;
-  padding-top: 30px;
-  border: none;
-}
-
-.tab_check td {
-  padding: 0px;
-  border: none;
-  color: white;
-}
-
-.tab_check td img {
-  margin-right: 0px;
+.puce {
+  margin-left: 20px;
+  line-height: 30px;
 }
 
 .btn-connexion {
@@ -863,12 +798,12 @@ fieldset[disabled] .datepicker table tr td span.active.disabled:hover.active {
   background: url(../images/btn@rouge.png);
 }
 
-.picto {
-  width: 50px;
+.check, .details {
+  width: 15px;
 }
 
-.fleche_picto {
-  width: 30px;
+.tab_center {
+  text-align: center;
 }
 
 #parent1 {
@@ -888,24 +823,47 @@ fieldset[disabled] .datepicker table tr td span.active.disabled:hover.active {
   font-size: 15px;
 }
 
-.cat-item1 h5, .cat-item2 h5, .cat-item3 h5 {
-  margin-top: 3px;
-  width: 100%;
-}
-
-.preco {
-  font-family: Arial;
-  font-size: 14px;
-  color: white;
-}
-
-footer {
-  position:absolute;
-  bottom:0px;
-  width: 100%;
+.pieces_justificatives {
+  margin-left: 35px;
+  margin-top: 2px;
 }
 
 a:focus
 {
    outline:none;
+}
+
+.graph1 {
+  margin-left: 80px;
+  margin-top: 0px;
+  margin-bottom: 30px;
+}
+
+.graph2{
+  margin-left: 20px;
+  margin-top: 0px;
+  margin-bottom: 10px;
+  width: 740px;
+}
+
+.graph3, .graph4, .graph5 {
+  margin-left: 20px;
+  margin-top: 0px;
+  margin-bottom: 30px;
+}
+
+.graph_rond {
+  margin-left: 120px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.graph_rond2 {
+  margin-left: 120px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.pagination {
+  margin-top: 20px;
 }
